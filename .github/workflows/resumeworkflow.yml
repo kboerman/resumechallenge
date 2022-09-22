@@ -12,8 +12,7 @@ jobs:
     - uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_WORKFLOW }}
- 
- - name: Upload to blob storage
+  - name: Upload to blob storage
       uses: azure/login@v1
       with:
         inlineScript: |
